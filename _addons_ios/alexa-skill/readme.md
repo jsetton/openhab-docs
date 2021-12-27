@@ -117,9 +117,9 @@ There is a maximum of 300 endpoints limit per user with 100 capabilities per end
 
 ## Single Endpoint
 
-Single items in openHAB can be mapped to single endpoint in Alexa through the use of the [item metadata](https://www.openhab.org/docs/concepts/items.html#item-metadata).
+Single items in openHAB can be mapped to a single endpoint in Alexa through the use of the [item metadata](https://www.openhab.org/docs/concepts/items.html#item-metadata).
 
-An simple example of this is a light switch. In openHAB a light switch is defined as a "Switch" item and responds to ON or OFF commands.
+A simple example of this is a light switch. In openHAB a light switch is defined as a "Switch" item and responds to ON or OFF commands.
 
 ```xtend
 Switch LightSwitch "Light Switch" {alexa="Light"}
@@ -657,7 +657,7 @@ If paired with [`TiltAngle`](#tiltangle), the primary controls (open/close/stop)
     * defaults to item state description options `presets="value1=label1,..."` if defined, otherwise no presets
   * language=`<code>`
     * text-based preset name language support
-    * two-letter language code: `de`, `en`, `es`, `fr`, `hi`, `it`, `ja`, `pt`
+    * two-letter language code: `ar`, `de`, `en`, `es`, `fr`, `hi`, `it`, `ja`, `pt`
     * defaults to your server [regional settings](#regional-settings) if defined, otherwise `en`
   * actionMappings=`<mappings>`
     * each [semantic](#semantic-extensions) mapping formatted as `<action>=<value>`
@@ -682,7 +682,7 @@ If paired with [`TiltAngle`](#tiltangle), the primary controls (open/close/stop)
 
 #### `TiltAngle`
 
-Items that represent the title angle of a window blind.
+Items that represent the tilt angle of a window blind.
 
 If paired with [`PositionState`](#positionstate), the primary controls (open/close/stop) can be defined as position-based or tilt-based setting metadata parameter `primaryControl="tilt"` at the group level.
 
@@ -704,7 +704,7 @@ If paired with [`PositionState`](#positionstate), the primary controls (open/clo
     * defaults to item state description options `presets="value1=label1,..."` if defined, otherwise no presets
   * language=`<code>`
     * text-based preset name language support
-    * two-letter language code: `de`, `en`, `es`, `fr`, `hi`, `it`, `ja`, `pt`
+    * two-letter language code: `ar`, `de`, `en`, `es`, `fr`, `hi`, `it`, `ja`, `pt`
     * defaults to your server [regional settings](#regional-settings) if defined, otherwise `en`
   * actionMappings=`<mappings>`
     * each [semantic](#semantic-extensions) mapping formatted as `<action>=<value>`
@@ -773,7 +773,7 @@ Items that represent an input source (e.g. "HDMI 1" or "TUNER" on a stereo).
     * defaults to item state description options `supportedInputs="value1=label1,..."`, if defined, otherwise no supported inputs
   * language=`<code>`
     * input name language support
-    * two-letter language code: `de`, `en`, `es`, `fr`, `hi`, `it`, `ja`, `pt`
+    * two-letter language code: `ar`, `de`, `en`, `es`, `fr`, `hi`, `it`, `ja`, `pt`
     * defaults to your server [regional settings](#regional-settings) if defined, otherwise `en`
 * Utterance examples:
   * *Alexa, change the input to `<input name>` on the `<device name>`.*
@@ -1639,7 +1639,7 @@ Items that represent components of a device that have more than one setting. Mul
     * defaults to false
   * language=`<code>`
     * text-based name language support
-    * two-letter language code: `de`, `en`, `es`, `fr`, `hi`, `it`, `ja`, `pt`
+    * two-letter language code: `ar`, `de`, `en`, `es`, `fr`, `hi`, `it`, `ja`, `pt`
     * defaults to your server [regional settings](#regional-settings) if defined, otherwise `en`
   * actionMappings=`<mappings>`
     * each [semantic](#semantic-extensions) mapping formatted as, based on action type: (e.g. `actionMappings="Close=DOWN,Open=UP,Lower=DOWN,Raise=UP,Stop=STOP"`)
@@ -1722,7 +1722,7 @@ Items that represent components of a device that are characterized by numbers wi
       * Rollershutter => `Percent`
   * language=`<code>`
     * text-based name language support
-    * two-letter language code: `de`, `en`, `es`, `fr`, `hi`, `it`, `ja`, `pt`
+    * two-letter language code: `ar`, `de`, `en`, `es`, `fr`, `hi`, `it`, `ja`, `pt`
     * defaults to your server [regional settings](#regional-settings) if defined, otherwise `en`
   * actionMappings=`<mappings>`
     * each [semantic](#semantic-extensions) mapping formatted as, based on action type: (e.g. `actionMappings="Close=0,Open=100,Lower=(-10),Raise=(+10)"`)
@@ -1787,7 +1787,7 @@ Items that represent components of a device that can be toggled on or off. Multi
     * defaults to item state description read only property if defined, otherwise false
   * language=`<code>`
     * text-based name language support
-    * two-letter language code: `de`, `en`, `es`, `fr`, `hi`, `it`, `ja`, `pt`
+    * two-letter language code: `ar`, `de`, `en`, `es`, `fr`, `hi`, `it`, `ja`, `pt`
     * defaults to your server [regional settings](#regional-settings) if defined, otherwise `en`
   * actionMappings=`<mappings>`
     * each [semantic](#semantic-extensions) mapping formatted as `<action>=ON` or `<action>=OFF` (e.g. `actionMappings="Close=OFF,Open=ON"`)
